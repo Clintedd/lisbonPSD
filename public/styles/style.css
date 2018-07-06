@@ -131,9 +131,165 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-.container {
-  max-width: 900px;
+header {
+  background-image: url(../../images/main-image.png);
+  height: 100vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: fixed; }
+
+.top-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .top-nav__nav ul li {
+    display: inline-block;
+    list-style: none; }
+    .top-nav__nav ul li a {
+      text-decoration: none;
+      color: white;
+      text-transform: uppercase;
+      font-weight: 600; }
+    .top-nav__nav ul li a.search {
+      width: 44px;
+      height: 44px;
+      background-color: #ed5788;
+      padding: 20px;
+      border-radius: 50%; }
+
+.top-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .top-main__button {
+    background-color: rgba(255, 255, 255, 0.28);
+    padding: 20px 5px; }
+    .top-main__button a i {
+      font-size: 1.1rem;
+      color: white; }
+  .top-main__div {
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center; }
+    .top-main__div__mic i {
+      font-size: 1.8rem; }
+    .top-main__div__headers h3 {
+      font-family: 'Poppins', sans-serif;
+      font-style: italic;
+      font-size: 2.2rem;
+      line-height: 2.6rem; }
+    .top-main__div__headers h1 {
+      font-family: 'Raleway', sans-serif;
+      font-size: 4.4rem;
+      text-transform: uppercase; }
+    .top-main__div__button {
+      border: 1px solid #e85889;
+      border-radius: 5px;
+      padding: 12px 35px;
+      background-color: #e85889; }
+      .top-main__div__button a {
+        text-decoration: none;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.5rem; }
+
+.date {
+  background: #fafafa; }
+  .date__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+
+.address {
+  text-transform: uppercase; }
+  .address p {
+    font-family: 'Poppins', sans-serif;
+    color: #777;
+    font-size: 1rem;
+    font-weight: 500; }
+  .address h3 {
+    font-family: 'Raleway', sans-serif;
+    color: #222;
+    font-size: 2rem;
+    font-weight: 700; }
+
+.count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.number-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .number-box .boxes {
+    color: white;
+    background-color: #222;
+    width: 25px;
+    height: 30px;
+    margin: 0.5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 3px; }
+    .number-box .boxes p {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.3rem;
+      margin: 0; }
+
+.number-box:after {
+  content: ':';
+  padding: 10px 3px; }
+
+.last:after {
+  content: ""; }
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .buttons .button a {
+    padding: 100px 50px; }
+
+html {
+  font-size: 62.5%; }
+
+.wrapper {
+  width: 70%;
   margin: 0 auto; }
 
-body {
-  background: cornflowerblue; }
+.purple {
+  background-color: #463f8c; }
+
+.pink {
+  background-color: #e85889; }

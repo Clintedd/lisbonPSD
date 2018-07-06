@@ -1,0 +1,74 @@
+.date {
+  background: #fafafa;
+  
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.address {
+  text-transform: uppercase;
+
+  p {
+    font-family: 'Poppins', sans-serif;
+    color: $grey;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  h3 {
+    font-family: 'Raleway', sans-serif;
+    color: #222;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+}
+
+.count {
+  display: flex;
+}
+
+.number-box {
+  display: flex;
+
+  .boxes {
+    color: white;
+    background-color: #222;
+    width: 25px;
+    height: 30px;
+    margin: 0.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    
+    p {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.3rem;
+      margin: 0;
+    }
+  }
+}
+
+.number-box:after {
+  content: ':';
+  padding: 10px 3px;
+}
+
+.last:after {
+  content: '',
+}
+
+.buttons {
+  display: flex;
+
+
+  .button {
+
+    a {
+      padding: 100px 50px;
+    }
+
+  }
+}
