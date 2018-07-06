@@ -2,6 +2,7 @@
 @import 'header';
 @import 'utils';
 @import 'date';
+@import 'about';
 
 html {
   font-size: 62.5%;
@@ -12,8 +13,13 @@ html {
 	margin: 0 auto;
 }
 
-body {
+img {
+	display: block;
+	width: 100%;
+}
 
+a {
+	text-decoration: none;
 }
 
 .purple {
@@ -22,4 +28,29 @@ body {
 
 .pink {
 	background-color: #e85889;
+}
+
+.subheader {
+	text-align: center;
+
+	h2 {
+		text-transform: uppercase;
+		font-family: 'Raleway', sans-serif;
+		font-size: 2.4rem;
+		font-weight: 800;
+		color: $black;
+	}
+
+	p {
+		font-family: 'Poppins', sans-serif;
+		font-size: 1.2rem;
+		font-style: italic;
+	} 
+
+	.line {
+		width: 50px;
+		display: block;
+		border-bottom: 1px solid $pink;
+		margin: 0 auto;
+	}
 }

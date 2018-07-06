@@ -65,10 +65,23 @@
 
 
   .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 40px;
+    border-radius: 3px;
 
     a {
-      padding: 100px 50px;
+      font-family: 'Raleway', sans-serif;
+      text-transform: uppercase;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: white;
     }
 
+  }
+  .button:first-child {
+    margin-right: 13px;
   }
 }

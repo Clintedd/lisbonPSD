@@ -1,0 +1,52 @@
+.about {
+
+  &__images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+
+    &__container {
+      box-shadow: 2px 4px 18px 0px rgba(0, 0, 0, 0.03);
+
+      &:hover {
+        box-shadow:  2px 4px 18px 0px rgba(0, 0, 0, 0.13);
+
+        .text a {
+          color: $purple;
+        }
+      }
+    }
+
+    &__container:not(:last-child) {
+      margin-right: 30px;
+    }
+    
+    
+    
+  }
+}
+
+.text {
+  margin: 25px 19px;
+
+  &__header {
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: $black;
+  }
+
+  &__paragraph {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: $grey;
+    line-height: 2rem;
+  }
+
+  a {
+    color: $pink;
+    font-style: italic;
+  }
+}

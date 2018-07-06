@@ -278,8 +278,64 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .buttons .button a {
-    padding: 100px 50px; }
+  .buttons .button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 120px;
+    height: 40px;
+    border-radius: 3px; }
+    .buttons .button a {
+      font-family: 'Raleway', sans-serif;
+      text-transform: uppercase;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: white; }
+  .buttons .button:first-child {
+    margin-right: 13px; }
+
+.about__images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 30px; }
+  .about__images__container {
+    -webkit-box-shadow: 2px 4px 18px 0px rgba(0, 0, 0, 0.03);
+            box-shadow: 2px 4px 18px 0px rgba(0, 0, 0, 0.03); }
+    .about__images__container:hover {
+      -webkit-box-shadow: 2px 4px 18px 0px rgba(0, 0, 0, 0.13);
+              box-shadow: 2px 4px 18px 0px rgba(0, 0, 0, 0.13); }
+      .about__images__container:hover .text a {
+        color: #463f8c; }
+  .about__images__container:not(:last-child) {
+    margin-right: 30px; }
+
+.text {
+  margin: 25px 19px; }
+  .text__header {
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #222; }
+  .text__paragraph {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #777;
+    line-height: 2rem; }
+  .text a {
+    color: #e85889;
+    font-style: italic; }
 
 html {
   font-size: 62.5%; }
@@ -288,8 +344,33 @@ html {
   width: 70%;
   margin: 0 auto; }
 
+img {
+  display: block;
+  width: 100%; }
+
+a {
+  text-decoration: none; }
+
 .purple {
   background-color: #463f8c; }
 
 .pink {
   background-color: #e85889; }
+
+.subheader {
+  text-align: center; }
+  .subheader h2 {
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: #222; }
+  .subheader p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-style: italic; }
+  .subheader .line {
+    width: 50px;
+    display: block;
+    border-bottom: 1px solid #e85889;
+    margin: 0 auto; }
