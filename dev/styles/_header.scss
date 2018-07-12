@@ -88,13 +88,11 @@ header {
     }
 
     &__button {
-      border: 1px solid #e85889;
-      border-radius: 5px;
-      padding: 12px 35px;
-      background-color: #e85889;
       
-
       a {
+        border-radius: 5px;
+        background-color: #e85889;
+        padding: 12px 35px;
         text-decoration: none;
         color: white;
         font-family: 'Raleway', sans-serif;

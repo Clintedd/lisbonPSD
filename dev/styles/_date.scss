@@ -68,16 +68,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 120px;
-    height: 40px;
     border-radius: 3px;
+    margin: auto;
 
     a {
+      padding: 15px 30px;
       font-family: 'Raleway', sans-serif;
       text-transform: uppercase;
       font-size: 1.1rem;
       font-weight: 700;
       color: white;
+      white-space: nowrap; 
     }
 
   }

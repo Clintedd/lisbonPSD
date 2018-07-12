@@ -203,16 +203,14 @@ header {
       font-family: 'Raleway', sans-serif;
       font-size: 4.4rem;
       text-transform: uppercase; }
-    .top-main__div__button {
-      border: 1px solid #e85889;
+    .top-main__div__button a {
       border-radius: 5px;
+      background-color: #e85889;
       padding: 12px 35px;
-      background-color: #e85889; }
-      .top-main__div__button a {
-        text-decoration: none;
-        color: white;
-        font-family: 'Raleway', sans-serif;
-        font-size: 1.5rem; }
+      text-decoration: none;
+      color: white;
+      font-family: 'Raleway', sans-serif;
+      font-size: 1.5rem; }
 
 .date {
   background: #fafafa; }
@@ -288,17 +286,25 @@ header {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 120px;
-    height: 40px;
-    border-radius: 3px; }
+    border-radius: 3px;
+    margin: auto; }
     .buttons .button a {
+      padding: 15px 30px;
       font-family: 'Raleway', sans-serif;
       text-transform: uppercase;
       font-size: 1.1rem;
       font-weight: 700;
-      color: white; }
+      color: white;
+      white-space: nowrap; }
   .buttons .button:first-child {
     margin-right: 13px; }
+
+.about__subheader h2 {
+  color: #222; }
+
+.about__subheader p {
+  font-style: italic;
+  font-size: 1.2rem; }
 
 .about__images {
   display: -webkit-box;
@@ -337,6 +343,35 @@ header {
     color: #e85889;
     font-style: italic; }
 
+.join {
+  background-color: #463f8c;
+  color: #fff; }
+  .join__subheader {
+    width: 65%;
+    margin: 0 auto; }
+    .join__subheader h2.white {
+      font-weight: 700; }
+    .join__subheader p {
+      font-size: 1rem; }
+  .join__form form {
+    margin: 0 auto;
+    position: relative; }
+    .join__form form input[type=text] {
+      color: #fff;
+      border: 1px solid #fff;
+      border-right: none;
+      background-color: rgba(70, 63, 140, 0);
+      width: 60%;
+      border-radius: 5px;
+      padding: 12.5px 20px; }
+    .join__form form input[type=submit] {
+      position: absolute;
+      background-color: #e85889;
+      color: #fff;
+      border: 1px solid #e85889;
+      padding: 12.5px 20px;
+      right: 100px; }
+
 html {
   font-size: 62.5%; }
 
@@ -357,18 +392,18 @@ a {
 .pink {
   background-color: #e85889; }
 
+.hide {
+  display: none; }
+
 .subheader {
   text-align: center; }
   .subheader h2 {
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
     font-size: 2.4rem;
-    font-weight: 800;
-    color: #222; }
+    font-weight: 800; }
   .subheader p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.2rem;
-    font-style: italic; }
+    font-family: 'Poppins', sans-serif; }
   .subheader .line {
     width: 50px;
     display: block;

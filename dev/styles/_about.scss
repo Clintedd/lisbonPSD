@@ -1,5 +1,16 @@
 .about {
 
+  &__subheader {
+    
+    h2 {
+      color: $black;
+    }
+    p {
+      font-style: italic;
+      font-size: 1.2rem;
+    }
+  }
+
   &__images {
     display: flex;
     justify-content: space-between;
