@@ -1,0 +1,40 @@
+.speakers {
+
+}
+
+.headshots {
+  display: flex;
+  
+  &__headshot:not(:last-child) {
+    margin-right: 20px;
+  }
+  &__headshot {
+    flex-basis: 25%;
+    position: relative;
+  }
+
+  &__icons {
+    position: absolute;
+    display: flex;
+    bottom: 30%;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+
+.icon {
+  background-color: $black;
+  border-radius: 50%;
+  padding: 20px;
+
+
+  i {
+    display: block;
+    color: #fff;
+    font-size: 1.5rem;
+  }
+}
+
+.icon:not(:last-child) {
+  margin-right: 6px;
+}
