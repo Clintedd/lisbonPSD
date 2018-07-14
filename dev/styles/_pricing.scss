@@ -1,0 +1,23 @@
+.pricing {
+  background-image: url(../../images/pricing-image.png);
+
+  &__subheader {
+    color: #fff;
+
+    p {
+      font-style: italic;
+    }
+  }
+}
+
+.plans {
+  display: flex;
+
+  &__plan {
+    
+    &__blackline {
+      display: block;
+      
+    }
+  }
+}
