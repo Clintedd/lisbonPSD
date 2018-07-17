@@ -277,28 +277,31 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .buttons .button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    border-radius: 3px;
-    margin: auto; }
-    .buttons .button a {
-      padding: 15px 30px;
-      font-family: 'Raleway', sans-serif;
-      text-transform: uppercase;
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: white;
-      white-space: nowrap; }
-  .buttons .button:first-child {
-    margin-right: 13px; }
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 3px;
+  margin: auto; }
+  .button a {
+    display: block;
+    padding: 15px 30px;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: white;
+    white-space: nowrap; }
+
+.button:first-child {
+  margin-right: 13px; }
 
 .about__subheader h2 {
   color: #222; }
@@ -466,9 +469,56 @@ header {
 .plans {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
-  .plans__plan__blackline {
-    display: block; }
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  -webkit-box-shadow: 2px 4px 16px 0px rgba(0, 0, 0, 0.04);
+          box-shadow: 2px 4px 16px 0px rgba(0, 0, 0, 0.04); }
+  .plans__plan {
+    background-color: #ececec;
+    width: calc(100% / 3); }
+    .plans__plan__price {
+      text-align: center; }
+      .plans__plan__price h5 {
+        font-family: 'Raleway', sans-serif;
+        color: #222;
+        font-size: 1.7rem;
+        font-weight: 500; }
+      .plans__plan__price h6 {
+        font-family: 'Poppins', sans-serif;
+        color: #777;
+        font-size: 1.2rem;
+        font-weight: 300; }
+      .plans__plan__price__blackline {
+        display: block;
+        width: 30px;
+        border-bottom: 1px solid black;
+        margin: 0 auto; }
+      .plans__plan__price h2 {
+        display: inline-block;
+        font-family: 'Poppins', sans-serif;
+        font-size: 3.4rem;
+        position: relative;
+        font-weight: 500; }
+      .plans__plan__price h2::before {
+        content: "$";
+        font-family: 'Poppins', sans-serif;
+        font-size: 2rem;
+        font-weight: 300;
+        position: absolute;
+        left: -35%;
+        top: 15%; }
+      .plans__plan__price p {
+        display: inline-block;
+        font-family: 'Poppins', sans-serif;
+        color: #777;
+        font-size: 1.2rem; }
+    .plans__plan__dotted {
+      width: 100%;
+      border-top: 1px dotted #777; }
+  .plans__plan:not(:last-child) {
+    margin-right: 20px; }
 
 html {
   font-size: 62.5%; }

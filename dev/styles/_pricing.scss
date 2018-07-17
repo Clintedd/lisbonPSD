@@ -12,12 +12,71 @@
 
 .plans {
   display: flex;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px; 
+  box-shadow: 2px 4px 16px 0px rgba(0, 0, 0, 0.04);
 
   &__plan {
-    
-    &__blackline {
-      display: block;
+    background-color: #ececec;
+    width: calc(100% / 3);
+
+    &__price {
+      text-align: center;
+
+      h5 {
+        font-family: 'Raleway', sans-serif;
+        color: $black;
+        font-size: 1.7rem;
+        font-weight: 500;
+      }
+
+      h6 {
+        font-family: 'Poppins', sans-serif;
+        color: $grey;
+        font-size: 1.2rem;
+        font-weight: 300;
+      }
+
+      &__blackline {
+        display: block;
+        width: 30px;
+        border-bottom: 1px solid black;
+        margin: 0 auto;
+      }
+
+      h2 {
+        display: inline-block;
+        font-family: 'Poppins', sans-serif;
+        font-size: 3.4rem;
+        position: relative;
+        font-weight: 500;
+      }
+
+      h2::before {
+        content:"$";
+        font-family: 'Poppins', sans-serif;
+        font-size: 2rem;
+        font-weight: 300;
+        position: absolute;
+        left: -35%;
+        top: 15%;
+      }
       
+      p {
+        display: inline-block;
+        font-family: 'Poppins', sans-serif;
+        color: $grey;
+        font-size: 1.2rem;
+      }
     }
+
+    &__dotted {
+      width: 100%;
+      border-top: 1px dotted $grey;
+    }
+  }
+  &__plan:not(:last-child) {
+    margin-right: 20px;
   }
 }
