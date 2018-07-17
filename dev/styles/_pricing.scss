@@ -74,6 +74,13 @@
     &__dotted {
       width: 100%;
       border-top: 1px dotted $grey;
+
+      p {
+        color: $grey;
+        font-family: 'OpenSans';
+        font-size: 1.1rem;
+        padding: 7px 0 7px 50px;
+      }
     }
   }
   &__plan:not(:last-child) {
