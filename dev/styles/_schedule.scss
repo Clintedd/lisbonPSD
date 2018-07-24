@@ -1,7 +1,10 @@
 .schedule {
+  background-color: #fafafa;
 
   &__container {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     
     &__left {
       width: calc(30% - 30px);
@@ -35,10 +38,41 @@
     }
 
     &__right {
-      width: 70%;
+      width: 62%;
+      padding-left: 50px;
+
+      &__text:not(:last-child) {
+        margin-bottom: 50px;
+      }
 
       &__text {
         position: relative;
+
+        &__name, &__subject {
+          font-family: 'Raleway', sans-serif;
+          color: $black;
+        }
+
+        &__name {
+          font-size: 1.1rem;
+          font-weight: 400;
+
+          span {
+            font-size: 0.9rem;
+            color: $grey;
+          }
+        }
+
+        &__subject {
+          font-size: 1.3rem;
+          font-weight: 700;
+        }
+
+        &__quote {
+          font-family: 'Poppins', sans-serif;
+          color: #666;
+          font-size: 1.1rem;
+        }
       }
 
       &__text1::before {
@@ -47,10 +81,35 @@
         background-size: contain;
         background-repeat: no-repeat;
         border-radius: 50%;
-        border: 5px solid rgba(255, 242, 242, 0.17);
+        border: 3px solid #f2f2f2;
         width: 50px;
         height: 50px;
         position: absolute;
+        left: -70px;
+      }
+      &__text2::before {
+        content: "";
+        background: url(../../images/schedule-2.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        border: 3px solid #f2f2f2;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        left: -70px;
+      }
+      &__text3::before {
+        content: "";
+        background: url(../../images/schedule-3.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        border: 3px solid #f2f2f2;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        left: -70px;
       }
     }
   }
