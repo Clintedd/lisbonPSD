@@ -1,20 +1,78 @@
 .quotes {
   background-color: $purple;
+  padding: 100px 0;
+
+  .wrapper {
+    display: flex;
+  }
   &__imgs {
-    width: 50px;
-    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    
+    
     &__img {
+      width: 40px;
+      height: 40px;
+      border: 3px solid transparent;
+
       img {
         border-radius: 50%;
 
       }
     }
+
+    &__img:hover {
+      border: 3px solid #fafafa;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  }
+
+  &__text::before {
+    content: '\“';
+    font-size: 9.5rem;
+    font-family: 'PlanetagenetCherokee';
+    color: #fafafa;
+    position: absolute;
+    left: -60px;
+    padding-top: 20px;
+
   }
 
   &__text {
+    margin-left: 80px;
+    width: 330px;
+    position: relative;
+
     h3 {
       font-family: 'Raleway', sans-serif;
+      font-size: 2.4rem;
+      font-weight: 700;
       color: #fafafa;
+      line-height: 3.5rem;
+    }
+
+    &__quote {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.3rem;
+      font-style: italic;
+      color: #bfb9f6;
+      word-break: break-all;
+    }
+
+    &__name {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #fafafa;
+
+      span {
+        color: #bfb9f6;
+        font-weight: 400;
+        font-style: italic;
+      }
     }
   }
 }

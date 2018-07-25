@@ -8,6 +8,7 @@
 @import 'pricing';
 @import 'schedule';
 @import 'quotes';
+@import 'news';
 
 html {
   font-size: 62.5%;
@@ -58,5 +59,15 @@ a {
 		display: block;
 		border-bottom: 1px solid $pink;
 		margin: 0 auto;
+	}
+}
+
+.about__subheader,
+.speakers__subheader,
+.schedule__subheader,
+.news__subheader {
+	p {
+		color: $grey;
+		font-style: italic;
 	}
 }

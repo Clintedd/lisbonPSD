@@ -1,3 +1,4 @@
+@charset "UTF-8";
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }
 
@@ -376,9 +377,6 @@ header {
       padding: 12.5px 20px;
       right: 100px; }
 
-.speakers__subheader p {
-  font-style: italic; }
-
 .headshots {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -614,15 +612,73 @@ header {
         left: -70px; }
 
 .quotes {
-  background-color: #463f8c; }
+  background-color: #463f8c;
+  padding: 100px 0; }
+  .quotes .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
   .quotes__imgs {
-    width: 50px;
-    height: 50px; }
-    .quotes__imgs__img img {
-      border-radius: 50%; }
-  .quotes__text h3 {
-    font-family: 'Raleway', sans-serif;
-    color: #fafafa; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    padding-top: 10px; }
+    .quotes__imgs__img {
+      width: 40px;
+      height: 40px;
+      border: 3px solid transparent; }
+      .quotes__imgs__img img {
+        border-radius: 50%; }
+    .quotes__imgs__img:hover {
+      border: 3px solid #fafafa;
+      border-radius: 50%;
+      cursor: pointer; }
+  .quotes__text::before {
+    content: '\“';
+    font-size: 9.5rem;
+    font-family: 'PlanetagenetCherokee';
+    color: #fafafa;
+    position: absolute;
+    left: -60px;
+    padding-top: 20px; }
+  .quotes__text {
+    margin-left: 80px;
+    width: 330px;
+    position: relative; }
+    .quotes__text h3 {
+      font-family: 'Raleway', sans-serif;
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: #fafafa;
+      line-height: 3.5rem; }
+    .quotes__text__quote {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.3rem;
+      font-style: italic;
+      color: #bfb9f6;
+      word-break: break-all; }
+    .quotes__text__name {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #fafafa; }
+      .quotes__text__name span {
+        color: #bfb9f6;
+        font-weight: 400;
+        font-style: italic; }
+
+.news__articles {
+  display: grid;
+  grid-template-columns: 33.3333% 33.3333% 33.3333%;
+  grid-template-rows: 50% 50%;
+  grid-gap: 30px; }
 
 html {
   font-size: 62.5%; }
@@ -661,3 +717,10 @@ a {
     display: block;
     border-bottom: 1px solid #e85889;
     margin: 0 auto; }
+
+.about__subheader p,
+.speakers__subheader p,
+.schedule__subheader p,
+.news__subheader p {
+  color: #777;
+  font-style: italic; }

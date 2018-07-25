@@ -1,0 +1,9 @@
+.news {
+
+  &__articles {
+    display: grid;
+    grid-template-columns: 33.3333% 33.3333% 33.3333%;
+    grid-template-rows: 50% 50%;
+    grid-gap: 30px;
+  }
+}
