@@ -710,6 +710,46 @@ header {
   .text__subject {
     color: #777; }
 
+.newsletter {
+  background-color: #f4f4f4;
+  padding: 70px 0; }
+  .newsletter__header {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: #222;
+    font-size: 2rem; }
+  .newsletter__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-family: 'Poppins', sans-serif; }
+    .newsletter__form__email {
+      display: block;
+      width: 500px;
+      border: 1px solid #fff;
+      color: #999;
+      padding: 1rem 2rem;
+      margin-right: 15px;
+      border-radius: 5px; }
+    .newsletter__form__submit {
+      display: block;
+      width: 130px;
+      background-color: #e85889;
+      border: none;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 2px; }
+
+.contact__contents__container__img {
+  content: '\f3c5'; }
+
 html {
   font-size: 62.5%; }
 

@@ -1,0 +1,40 @@
+.newsletter {
+  background-color: #f4f4f4;
+  padding: 70px 0;
+
+  &__header {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: $black;
+    font-size: 2rem;
+  }
+
+  &__form {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+
+    &__email {
+      display: block;
+      width: 500px;
+      border: 1px solid #fff;
+      color: #999;
+      padding: 1rem 2rem;
+      margin-right: 15px;
+      border-radius: 5px;
+    }
+
+    &__submit {
+      display: block;
+      width: 130px;
+      background-color: #e85889;
+      border: none;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+  }
+
+  
+}
