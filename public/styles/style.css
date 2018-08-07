@@ -747,8 +747,46 @@ header {
       text-transform: uppercase;
       letter-spacing: 2px; }
 
-.contact__contents__container__img {
-  content: '\f3c5'; }
+.contact {
+  background-color: #1b1b1b;
+  padding: 30px 0; }
+  .contact__contents {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .contact__contents__container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      color: #ababab;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .contact__contents__container__img {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        width: 40px;
+        height: 40px;
+        background-color: #2f2f2f;
+        border-radius: 50%;
+        margin-right: 30px; }
+      .contact__contents__container__p {
+        font-family: 'Poppins', sans-serif;
+        line-height: 2rem;
+        margin: 0; }
+    .contact__contents__container:not(:last-child) {
+      border-right: 1px solid rgba(88, 88, 88, 0.58);
+      padding-right: 70px; }
 
 html {
   font-size: 62.5%; }
