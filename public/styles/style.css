@@ -134,8 +134,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 header {
   background-image: url(../../images/main-image.png);
-  height: 100vh;
-  background-size: contain;
+  height: 80vh;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: fixed; }
 
@@ -769,25 +769,23 @@ header {
           -ms-flex-pack: center;
               justify-content: center; }
       .contact__contents__container__img {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
         width: 50px;
         height: 50px;
         background-color: #2f2f2f;
         border-radius: 50%;
-        padding: 0;
-        -ms-flex-preferred-size: 50px;
-            flex-basis: 50px;
-        margin-right: 40px; }
+        margin-right: 40px;
+        position: relative; }
         .contact__contents__container__img i {
+          position: absolute;
+          top: 13px;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+                  transform: translateX(-50%);
           font-size: 20px; }
+      .contact__contents__container__img:after {
+        content: "";
+        padding-bottom: 100%;
+        display: block; }
       .contact__contents__container__p {
         color: #ababab;
         font-size: 1.1rem;
