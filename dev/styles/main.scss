@@ -1,16 +1,17 @@
 @import 'setup';
-@import 'header';
 @import 'utils';
-@import 'date';
-@import 'about';
-@import 'join';
-@import 'speakers';
-@import 'pricing';
-@import 'schedule';
-@import 'quotes';
-@import 'news';
-@import 'newsletter';
-@import 'contact';
+@import 'components/header';
+@import 'components/date';
+@import 'components/about';
+@import 'components/join';
+@import 'components/speakers';
+@import 'components/pricing';
+@import 'components/schedule';
+@import 'components/quotes';
+@import 'components/news';
+@import 'components/newsletter';
+@import 'components/contact';
+@import 'components/footer';
 
 html {
   font-size: 62.5%;
@@ -40,6 +41,10 @@ a {
 
 .hide {
 	display: none;
+}
+
+.text--uppercase {
+	text-transform: uppercase;
 }
 
 .subheader {

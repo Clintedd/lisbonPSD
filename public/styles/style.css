@@ -754,17 +754,20 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
+    padding-bottom: 20px; }
     .contact__contents__container {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       color: #ababab;
+      width: calc( 100% / 3);
+      font-family: 'Poppins', sans-serif;
       -webkit-box-align: center;
           -ms-flex-align: center;
-              align-items: center; }
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
       .contact__contents__container__img {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -775,18 +778,50 @@ header {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
         background-color: #2f2f2f;
         border-radius: 50%;
-        margin-right: 30px; }
+        padding: 0;
+        -ms-flex-preferred-size: 50px;
+            flex-basis: 50px;
+        margin-right: 40px; }
+        .contact__contents__container__img i {
+          font-size: 20px; }
       .contact__contents__container__p {
-        font-family: 'Poppins', sans-serif;
-        line-height: 2rem;
+        color: #ababab;
+        font-size: 1.1rem;
+        line-height: 2.4rem;
         margin: 0; }
     .contact__contents__container:not(:last-child) {
-      border-right: 1px solid rgba(88, 88, 88, 0.58);
-      padding-right: 70px; }
+      border-right: 1px solid rgba(88, 88, 88, 0.58); }
+
+.footer {
+  position: relative;
+  background-color: #100f0f; }
+  .footer__arrow {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid #100f0f;
+    display: block; }
+    .footer__arrow__chevron {
+      color: #fff;
+      font-size: 2rem;
+      position: absolute;
+      top: 10px;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%); }
+  .footer__logo {
+    padding: 30px 0;
+    width: 150px;
+    margin: 0 auto; }
 
 html {
   font-size: 62.5%; }
@@ -810,6 +845,9 @@ a {
 
 .hide {
   display: none; }
+
+.text--uppercase {
+  text-transform: uppercase; }
 
 .subheader {
   text-align: center; }
