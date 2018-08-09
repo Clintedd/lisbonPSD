@@ -17,6 +17,11 @@ html {
   font-size: 62.5%;
 }
 
+body {
+	width: 100%;
+	margin: auto;
+}
+
 .wrapper {
 	width: 70%;
 	margin: 0 auto;
@@ -45,6 +50,10 @@ a {
 
 .text--uppercase {
 	text-transform: uppercase;
+}
+
+.section--padding {
+	padding: 60px 0;
 }
 
 .subheader {

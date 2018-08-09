@@ -1,5 +1,6 @@
 .about {
 
+
   &__subheader {
     
     h2 {
@@ -18,6 +19,7 @@
 
     &__container {
       box-shadow: 2px 4px 18px 0px rgba(0, 0, 0, 0.03);
+      transition: all 0.2s ease-in-out;
 
       &:hover {
         box-shadow:  2px 4px 18px 0px rgba(0, 0, 0, 0.13);
