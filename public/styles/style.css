@@ -350,8 +350,7 @@ header {
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 30px; }
+          justify-content: space-between; }
   .about__images__container {
     -webkit-box-shadow: 2px 4px 18px 0px rgba(0, 0, 0, 0.03);
             box-shadow: 2px 4px 18px 0px rgba(0, 0, 0, 0.03);
@@ -392,25 +391,33 @@ header {
     .join__subheader h2.white {
       font-weight: 700; }
     .join__subheader p {
-      font-size: 1rem; }
+      font-size: 1rem;
+      line-height: 2rem; }
   .join__form form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: 0 auto;
-    position: relative; }
+    position: relative;
+    padding: 30px 0; }
     .join__form form input[type=text] {
       color: #fff;
       border: 1px solid #fff;
       border-right: none;
       background-color: rgba(70, 63, 140, 0);
-      width: 60%;
-      border-radius: 5px;
+      width: 250px;
+      border-radius: 5px 0 0 5px;
       padding: 12.5px 20px; }
     .join__form form input[type=submit] {
-      position: absolute;
       background-color: #e85889;
       color: #fff;
       border: 1px solid #e85889;
       padding: 12.5px 20px;
-      right: 100px; }
+      right: 100px;
+      border-radius: 0 5px 5px 0; }
 
 .headshots {
   display: -webkit-box;
@@ -437,12 +444,19 @@ header {
         color: #777; }
   .headshots__headshot:not(:last-child) {
     margin-right: 20px; }
-  .headshots__headshot:hover .headshots__headshot__text {
-    background-color: #463f8c; }
-    .headshots__headshot:hover .headshots__headshot__text p:first-child {
-      color: #fff; }
-    .headshots__headshot:hover .headshots__headshot__text p:last-child {
-      color: #a6a0e3; }
+  .headshots__headshot:hover {
+    -webkit-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in; }
+    .headshots__headshot:hover .headshots__headshot__text {
+      background-color: #463f8c; }
+      .headshots__headshot:hover .headshots__headshot__text p:first-child {
+        color: #fff; }
+      .headshots__headshot:hover .headshots__headshot__text p:last-child {
+        color: #a6a0e3; }
+    .headshots__headshot:hover .headshots__icons {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
   .headshots__icons {
     position: absolute;
     display: -webkit-box;
@@ -454,18 +468,32 @@ header {
             transform: translate(-50%, 0); }
 
 .icon {
-  background-color: #222;
+  background-color: rgba(0, 0, 0, 0.55);
   border-radius: 50%;
-  padding: 20px; }
+  min-width: 33px;
+  min-height: 33px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
   .icon i {
     display: block;
     color: #fff;
     font-size: 1.5rem; }
 
+.icon:hover {
+  background-color: #e85889; }
+
 .icon:not(:last-child) {
   margin-right: 6px; }
 
 .dots {
+  margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -486,8 +514,8 @@ header {
     border: 1px solid #e85889;
     border-radius: 50%; }
     .dots__pink__circle {
-      width: 9px;
-      height: 9px;
+      min-width: 9px;
+      min-height: 9px;
       background-color: #e85889;
       border-radius: 50%;
       margin: 1px; }
@@ -497,6 +525,7 @@ header {
   background-repeat: no-repeat;
   background-size: contain; }
   .pricing__subheader {
+    padding-bottom: 50px;
     color: #fff; }
     .pricing__subheader p {
       font-style: italic; }
@@ -926,9 +955,14 @@ a {
     border-bottom: 1px solid #e85889;
     margin: 0 auto; }
 
-.about__subheader p,
-.speakers__subheader p,
-.schedule__subheader p,
-.news__subheader p {
-  color: #777;
-  font-style: italic; }
+.about__subheader,
+.speakers__subheader,
+.schedule__subheader,
+.news__subheader {
+  padding-bottom: 50px; }
+  .about__subheader p,
+  .speakers__subheader p,
+  .schedule__subheader p,
+  .news__subheader p {
+    color: #777;
+    font-style: italic; }

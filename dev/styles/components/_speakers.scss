@@ -42,17 +42,24 @@
     margin-right: 20px;
   }
 
-  &__headshot:hover .headshots__headshot__text {
-    background-color: $purple;
+  &__headshot:hover {
+    transition: all 0.4s ease-in;
+    
+    .headshots__headshot__text {
+      background-color: $purple;
 
-    p:first-child {
-      color: #fff;
+      p:first-child {
+        color: #fff;
+      }
+      p:last-child {
+        color: #a6a0e3;
+      }
     }
-    p:last-child {
-      color: #a6a0e3;
-    }
-  }
 
+    .headshots__icons {
+      display: flex;
+    }
+  } 
 
   &__icons {
     position: absolute;
@@ -64,10 +71,13 @@
 }
 
 .icon {
-  background-color: $black;
+  background-color: rgba(0, 0, 0, 0.55);
   border-radius: 50%;
-  padding: 20px;
-
+  min-width: 33px; 
+  min-height: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   i {
     display: block;
@@ -76,11 +86,16 @@
   }
 }
 
+.icon:hover {
+  background-color: $pink;
+}
+
 .icon:not(:last-child) {
   margin-right: 6px;
 }
 
 .dots {
+  margin-top: 40px; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -102,8 +117,8 @@
     border-radius: 50%;
 
     &__circle {
-      width: 9px;
-      height: 9px;
+      min-width: 9px;
+      min-height: 9px;
       background-color: $pink;
       border-radius: 50%;
       margin: 1px;
