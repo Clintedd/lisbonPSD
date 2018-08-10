@@ -311,31 +311,8 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-
-.button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 3px;
-  margin: auto; }
-  .button a {
-    display: block;
-    padding: 15px 30px;
-    font-family: 'Raleway', sans-serif;
-    text-transform: uppercase;
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: white;
-    white-space: nowrap; }
-
-.button:first-child {
-  margin-right: 13px; }
+  .buttons__button:first-child {
+    margin-right: 13px; }
 
 .about__subheader h2 {
   color: #222; }
@@ -541,19 +518,38 @@ header {
           box-shadow: 2px 4px 16px 0px rgba(0, 0, 0, 0.04); }
   .plans__plan {
     background-color: #ececec;
-    width: calc(100% / 3); }
+    width: calc(100% / 3);
+    position: relative;
+    overflow: hidden; }
+    .plans__plan span {
+      background-color: #463f8c;
+      color: #fff;
+      position: absolute;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 500;
+      line-height: 2.4rem;
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+      right: -40px;
+      top: 18px;
+      white-space: nowrap;
+      padding: 0 4rem; }
     .plans__plan__price {
       text-align: center; }
       .plans__plan__price h5 {
         font-family: 'Raleway', sans-serif;
         color: #222;
         font-size: 1.7rem;
-        font-weight: 500; }
+        font-weight: 500;
+        margin: 0;
+        padding: 40px 0 10px; }
       .plans__plan__price h6 {
         font-family: 'Poppins', sans-serif;
         color: #777;
         font-size: 1.2rem;
-        font-weight: 300; }
+        font-weight: 300;
+        margin: 0;
+        padding-bottom: 10px; }
       .plans__plan__price__blackline {
         display: block;
         width: 30px;
@@ -585,9 +581,12 @@ header {
         color: #777;
         font-family: 'OpenSans';
         font-size: 1.1rem;
-        padding: 7px 0 7px 50px; }
+        padding: 13px 0 13px 20%;
+        margin: 0; }
   .plans__plan:not(:last-child) {
     margin-right: 20px; }
+  .plans__button {
+    margin: 10px 0 20px 20%; }
 
 .schedule {
   background-color: #fafafa; }
@@ -924,6 +923,20 @@ img {
 
 a {
   text-decoration: none; }
+
+.button {
+  border-radius: 3px;
+  width: 100px;
+  text-align: center; }
+  .button a {
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: white;
+    white-space: nowrap;
+    padding: 10px 0; }
 
 .purple {
   background-color: #463f8c; }

@@ -36,6 +36,24 @@ a {
 	text-decoration: none;
 }
 
+.button {
+	border-radius: 3px;
+	width: 100px;
+	text-align: center;
+	
+
+  a {
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: white;
+		white-space: nowrap; 
+		padding: 10px 0;
+  }
+}
+
 .purple {
 	background-color: #463f8c;
 }
