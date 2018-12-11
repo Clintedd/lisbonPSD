@@ -812,6 +812,9 @@ header {
     font-size: 1.4rem;
     font-weight: 400; }
 
+.news__half--button {
+  padding: 5.5rem 3rem 0; }
+
 .news__container > div {
   background-color: #fafafa; }
 
