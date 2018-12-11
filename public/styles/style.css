@@ -745,7 +745,7 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto auto;
-  grid-gap: 15px;
+  grid-gap: 20px;
   grid-template-areas: "xbox xbox ybox" "box3 box4 ybox"; }
   .news__container__xbox {
     grid-area: xbox;
@@ -760,6 +760,24 @@ header {
     grid-area: ybox; }
   .news__container__box3 {
     grid-area: box3; }
+
+.news__text__title {
+  padding: 2rem 4rem; }
+  .news__text__title h4 {
+    color: #222;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600; }
+  .news__text__title p.author {
+    font-family: 'Poppins', sans-serif;
+    color: #ababab;
+    font-size: 1rem;
+    font-weight: 400; }
+  .news__text__title p {
+    font-size: 0.9rem;
+    font-family: 'Poppins', sans-serif;
+    color: #777;
+    font-weight: 400; }
 
 .news__container > div {
   background-color: #fafafa; }
@@ -908,7 +926,7 @@ body {
 
 img {
   display: block;
-  width: 100%; }
+  max-width: 100%; }
 
 a {
   text-decoration: none; }

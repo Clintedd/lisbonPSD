@@ -5,7 +5,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto;
-    grid-gap: 15px;
+    grid-gap: 20px;
     grid-template-areas: 
     "xbox xbox ybox"
     "box3 box4 ybox";
@@ -31,6 +31,34 @@
     }
     &__box3 {
       grid-area: box3;
+    }
+  }
+
+  &__text {
+
+    &__title {
+      padding: 2rem 4rem;
+
+      h4 {
+        color: $black;
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.6rem;
+        font-weight: 600;
+      }
+
+      p.author {
+        font-family: 'Poppins', sans-serif;
+        color: #ababab;
+        font-size: 1rem;
+        font-weight: 400;
+      }
+
+      p {
+        font-size: 0.9rem;
+        font-family: 'Poppins', sans-serif;
+        color:#777;
+        font-weight: 400;
+      }
     }
   }
 
