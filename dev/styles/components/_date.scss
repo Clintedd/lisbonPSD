@@ -7,11 +7,19 @@
     align-items: center;
     padding: 20px 0;
     flex-flow: row wrap;
+
+    @media (max-width: 830px) {
+      flex-flow: column wrap;
+    }
   }
 }
 
 .address {
   text-transform: uppercase;
+
+  @media (max-width: 830px) {
+    text-align: center;
+  }
 
   p {
     font-family: 'Poppins', sans-serif;

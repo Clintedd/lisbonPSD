@@ -5,12 +5,19 @@
 
 .headshots {
   display: flex;
+  justify-content: space-between;
+  flex-flow: row;
+
+  @media (max-width: 750px) {
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
   
   
   &__headshot {
-    flex-basis: 25%;
     position: relative;
     box-shadow: 12px 12px 18px 12px rgba(0, 0, 0, 0.03);
+
 
 
     &__text {

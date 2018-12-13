@@ -13,9 +13,10 @@
   }
 
   &__images {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    @media (max-width: 600px) {
+    @media (max-width: 500px) {
       flex-flow: column wrap;
     }
 
@@ -34,6 +35,9 @@
 
     &__container:not(:last-child) {
       margin-right: 30px;
+      @media (max-width: 500px) {
+        margin-right: 0;
+      }
     }
     
     
@@ -42,7 +46,8 @@
 }
 
 .text {
-  margin: 25px 19px;
+  width: 90%;
+  margin: 25px auto;
 
   &__header {
     text-transform: uppercase;
@@ -50,6 +55,7 @@
     font-size: 1.3rem;
     font-weight: 700;
     color: $black;
+    overflow: hidden;
   }
 
   &__paragraph {
@@ -58,6 +64,10 @@
     font-weight: 400;
     color: $grey;
     line-height: 2rem;
+
+    @media (max-width: 900px) {
+      display: none;
+    }
   }
 
   a {
