@@ -1,7 +1,5 @@
 .pricing {
-  background-image: url(../../images/pricing-image.png);
-  background-repeat: no-repeat;
-  background-size: contain;
+  background: url(../../images/pricing-image.png) no-repeat, center;
 
   &__subheader {
     padding-bottom: 50px;
@@ -17,14 +15,24 @@
   display: flex;
   width: 100%;
   background-color: #fff;
-  padding: 20px; 
+  padding: 10px; 
   box-shadow: 2px 4px 16px 0px rgba(0, 0, 0, 0.04);
+
+  @media (max-width: 750px) {
+    flex-flow: column;
+    align-items: center;
+  }
 
   &__plan {
     background-color: #ececec;
     width: calc(100% / 3);
     position: relative;
     overflow: hidden;
+    margin: 2rem 1rem;
+
+    @media (max-width: 750px) {
+      width: 250px;
+    }
 
     span {
       background-color: $purple;
@@ -98,6 +106,10 @@
       width: 100%;
       border-top: 1px dotted $grey;
 
+      @media (max-width: 940px) {
+        display: none;
+      } 
+
       p {
         color: $grey;
         font-family: 'OpenSans';
@@ -108,12 +120,13 @@
     }
   }
 
-  &__plan:not(:last-child) {
-    margin-right: 20px;
-  }
-
   &__button {
-    margin: 10px 0 20px 20%;
+    margin: 10px 0 20px 50px;
+
+    @media (max-width: 940px) {
+      margin: 15px auto;
+      
+    }
   
   }
 }

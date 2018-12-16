@@ -560,9 +560,7 @@ header {
       margin: 1px; }
 
 .pricing {
-  background-image: url(../../images/pricing-image.png);
-  background-repeat: no-repeat;
-  background-size: contain; }
+  background: url(../../images/pricing-image.png) no-repeat, center; }
   .pricing__subheader {
     padding-bottom: 50px;
     color: #fff; }
@@ -575,14 +573,27 @@ header {
   display: flex;
   width: 100%;
   background-color: #fff;
-  padding: 20px;
+  padding: 10px;
   -webkit-box-shadow: 2px 4px 16px 0px rgba(0, 0, 0, 0.04);
           box-shadow: 2px 4px 16px 0px rgba(0, 0, 0, 0.04); }
+  @media (max-width: 750px) {
+    .plans {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: column;
+              flex-flow: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
   .plans__plan {
     background-color: #ececec;
     width: calc(100% / 3);
     position: relative;
-    overflow: hidden; }
+    overflow: hidden;
+    margin: 2rem 1rem; }
+    @media (max-width: 750px) {
+      .plans__plan {
+        width: 250px; } }
     .plans__plan span {
       background-color: #463f8c;
       color: #fff;
@@ -639,16 +650,20 @@ header {
     .plans__plan__dotted {
       width: 100%;
       border-top: 1px dotted #777; }
+      @media (max-width: 940px) {
+        .plans__plan__dotted {
+          display: none; } }
       .plans__plan__dotted p {
         color: #777;
         font-family: 'OpenSans';
         font-size: 1.1rem;
         padding: 13px 0 13px 20%;
         margin: 0; }
-  .plans__plan:not(:last-child) {
-    margin-right: 20px; }
   .plans__button {
-    margin: 10px 0 20px 20%; }
+    margin: 10px 0 20px 50px; }
+    @media (max-width: 940px) {
+      .plans__button {
+        margin: 15px auto; } }
 
 .schedule {
   background-color: #fafafa; }
@@ -1080,6 +1095,9 @@ a {
 
 .section--padding {
   padding: 60px 0; }
+  @media (max-width: 650px) {
+    .section--padding {
+      padding: 30px 0; } }
 
 .subheader {
   text-align: center; }
