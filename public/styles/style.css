@@ -576,7 +576,7 @@ header {
   padding: 10px;
   -webkit-box-shadow: 2px 4px 16px 0px rgba(0, 0, 0, 0.04);
           box-shadow: 2px 4px 16px 0px rgba(0, 0, 0, 0.04); }
-  @media (max-width: 750px) {
+  @media (max-width: 600px) {
     .plans {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -584,7 +584,9 @@ header {
               flex-flow: column;
       -webkit-box-align: center;
           -ms-flex-align: center;
-              align-items: center; } }
+              align-items: center;
+      width: 300px;
+      margin: 0 auto; } }
   .plans__plan {
     background-color: #ececec;
     width: calc(100% / 3);
