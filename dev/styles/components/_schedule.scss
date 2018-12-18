@@ -98,7 +98,7 @@
         height: 50px;
         position: absolute;
         left: -70px;
-        top: 20px;
+        top: 20%;
       }
       &__text2::before {
         content: "";
@@ -111,7 +111,7 @@
         height: 50px;
         position: absolute;
         left: -70px;
-        top: 20px;
+        top: 20%;
       }
       &__text3::before {
         content: "";
@@ -124,7 +124,7 @@
         height: 50px;
         position: absolute;
         left: -70px;
-        top: 20px;
+        top: 20%;
       }
     }
   }
@@ -157,6 +157,18 @@
           border: 1px dashed #e0e0e0;
           padding: 10px 20px;
         }
+
+        &__text1::before {
+          top: 30%;
+        }
+
+        &__text2::before {
+          top: 30%;
+        }
+
+        &__text3::before {
+          top: 30%;
+        }
       }
     }
   }
@@ -185,7 +197,20 @@
         margin: 0 auto;
         width: 80%;
 
-        
+        &__text1::before {
+          left: 95px;
+          top: -40px;
+        }
+
+        &__text2::before {
+          left: 95px;
+          top: -40px;
+        }
+
+        &__text3::before {
+          left: 95px;
+          top: -40px;
+        }
       }
     }
   }

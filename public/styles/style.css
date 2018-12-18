@@ -746,7 +746,7 @@ header {
         height: 50px;
         position: absolute;
         left: -70px;
-        top: 20px; }
+        top: 20%; }
       .schedule__container__right__text2::before {
         content: "";
         background: url(../../images/schedule-2.png);
@@ -758,7 +758,7 @@ header {
         height: 50px;
         position: absolute;
         left: -70px;
-        top: 20px; }
+        top: 20%; }
       .schedule__container__right__text3::before {
         content: "";
         background: url(../../images/schedule-3.png);
@@ -770,7 +770,7 @@ header {
         height: 50px;
         position: absolute;
         left: -70px;
-        top: 20px; }
+        top: 20%; }
 
 @media (max-width: 800px) {
   .schedule__container {
@@ -793,7 +793,13 @@ header {
       width: 80%; }
       .schedule__container__right__text {
         border: 1px dashed #e0e0e0;
-        padding: 10px 20px; } }
+        padding: 10px 20px; }
+      .schedule__container__right__text1::before {
+        top: 30%; }
+      .schedule__container__right__text2::before {
+        top: 30%; }
+      .schedule__container__right__text3::before {
+        top: 30%; } }
 
 @media (max-width: 600px) {
   .schedule__container__left {
@@ -813,7 +819,16 @@ header {
       padding: 5px 5px; }
   .schedule__container__right {
     margin: 0 auto;
-    width: 80%; } }
+    width: 80%; }
+    .schedule__container__right__text1::before {
+      left: 95px;
+      top: -40px; }
+    .schedule__container__right__text2::before {
+      left: 95px;
+      top: -40px; }
+    .schedule__container__right__text3::before {
+      left: 95px;
+      top: -40px; } }
 
 .quotes {
   background-color: #463f8c;
