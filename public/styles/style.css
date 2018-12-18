@@ -665,7 +665,7 @@ header {
     margin: 10px 0 20px 50px; }
     @media (max-width: 940px) {
       .plans__button {
-        margin: 15px auto; } }
+        margin: 25px auto; } }
 
 .schedule {
   background-color: #fafafa; }
@@ -771,6 +771,49 @@ header {
         position: absolute;
         left: -70px;
         top: 20px; }
+
+@media (max-width: 800px) {
+  .schedule__container {
+    display: block; }
+    .schedule__container__left {
+      width: 100%;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: column;
+              flex-flow: column;
+      margin-bottom: 50px; }
+      .schedule__container__left__line {
+        display: none; }
+      .schedule__container__left__days {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+    .schedule__container__right {
+      margin: 0 auto;
+      width: 80%; }
+      .schedule__container__right__text {
+        border: 1px dashed #e0e0e0;
+        padding: 10px 20px; } }
+
+@media (max-width: 600px) {
+  .schedule__container__left {
+    width: 100%;
+    margin-bottom: 50px; }
+    .schedule__container__left__days {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: column;
+              flex-flow: column;
+      width: 80%;
+      text-align: center; }
+    .schedule__container__left__text {
+      padding: 5px 5px; }
+  .schedule__container__right {
+    margin: 0 auto;
+    width: 80%; } }
 
 .quotes {
   background-color: #463f8c;
