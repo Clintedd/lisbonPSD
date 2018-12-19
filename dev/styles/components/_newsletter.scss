@@ -10,29 +10,47 @@
   }
 
   &__form {
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     flex-flow: row;
-    justify-content: center;
+    justify-content: space-around;
     font-family: 'Poppins', sans-serif;
+
+    @media (max-width: 550px) {
+      flex-flow: column;
+      align-items: center;
+    }
 
     &__email {
       display: block;
-      width: 500px;
+      width: 78%;
       border: 1px solid #fff;
       color: #999;
       padding: 1rem 2rem;
-      margin-right: 15px;
       border-radius: 5px;
+
+      @media (max-width: 550px) {
+        margin: 0 auto 2rem;
+        width: 100%;
+      }
     }
 
     &__submit {
       display: block;
-      width: 130px;
+      width: 120px;
       background-color: #e85889;
       border: none;
       color: #fff;
       text-transform: uppercase;
-      letter-spacing: 2px;
+      letter-spacing: 1px;
+      padding: 1rem 1rem;
+      font-size: 1.4rem;
+      border-radius: 5px;
+
+      @media (max-width: 550px) {
+        margin: 0 auto 1rem;
+      }
     }
   }
 

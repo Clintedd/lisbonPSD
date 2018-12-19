@@ -1,7 +1,5 @@
 "use strict";
 
-var ohHey = "Hello World";
+var app = {};
 
-console.log(ohHey);
-
-console.log("hello");
+$(document).ready(function () {});

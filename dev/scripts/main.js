@@ -1,7 +1,12 @@
-const ohHey = "Hello World";
-
-console.log(ohHey);
+const app = {};
 
 
 
-console.log(`hello`);
+
+
+
+$(document).ready(function () {
+
+
+  
+});

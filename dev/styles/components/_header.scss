@@ -12,13 +12,29 @@ header {
   align-items: center;
   border-bottom: 2px solid rgba(255, 255, 255, 0.22);
 
+  .bar {
+    font-size: 3rem;
+    display: none;
+
+    @media (max-width: 920px) {
+      display: block;
+    }
+
+    .anchor-bar {
+      color: #fff;
+    }
+  }
+
   &__logo-container {
     min-width: 150px;
   }
 
   &__nav {
+    @media (max-width: 920px) {
+        display: none;
+      }
 
-    ul {
+    &__ul {
       display: flex;
       justify-content: space-between;
       align-items: center;

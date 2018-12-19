@@ -25,6 +25,10 @@
     margin: 0 auto;
   }
 
+  @media (max-width: 350px) {
+    width: 270px;
+  }
+
   &__plan {
     background-color: #ececec;
     width: calc(100% / 3);

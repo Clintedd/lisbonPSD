@@ -31,13 +31,21 @@
     margin: 0 auto;
   }
 
-  ul {
+  &__ul {
+    width: 100%;
     margin: 0 auto;
     list-style: none;
     text-align: center;
+    padding: 0;
 
     li {
       padding: 1rem 0;
+      display: flex;
+      width: 70%;
+      margin: 0 auto;
+      justify-content: space-between;
+      flex-flow: row wrap;
+
 
       a {
         font-size: 1.1rem;
