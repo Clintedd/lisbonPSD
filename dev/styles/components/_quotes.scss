@@ -4,17 +4,24 @@
 
   .wrapper {
     display: flex;
+
+    @media (max-width: 580px) {
+      flex-flow: column;
+    }
   }
   &__imgs {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     padding-top: 10px;
+
+    @media (max-width: 580px) {
+      flex-flow: row;
+    }
     
     
     &__img {
-      width: 40px;
-      height: 40px;
+      max-width: 6rem;
       border: 3px solid transparent;
 
       img {
@@ -39,12 +46,21 @@
     left: -60px;
     padding-top: 20px;
 
+    @media (max-width: 490px) {
+      display: none;
+    }
   }
 
   &__text {
     margin-left: 80px;
     width: 330px;
     position: relative;
+
+    @media (max-width: 490px) {
+      margin: 0 auto;
+      width: 90%;
+      text-align: center;
+    }
 
     h3 {
       font-family: 'Raleway', sans-serif;
