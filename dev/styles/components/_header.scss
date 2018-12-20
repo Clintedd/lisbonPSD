@@ -18,7 +18,7 @@ header {
     font-size: 3rem;
     display: none;
 
-    @media (max-width: 920px) {
+    @media (max-width: 1162px) {
       display: block;
     }
 
@@ -34,7 +34,7 @@ header {
   &__nav {
     position: relative;
 
-    @media (max-width: 920px) {
+    @media (max-width: 1162px) {
         display: none;
         width: 100%;
       }
@@ -45,7 +45,7 @@ header {
       align-items: center;
       padding: 0;
 
-      @media (max-width: 920px) {
+      @media (max-width: 1162px) {
         width: 100%;
         display: block;
         position: absolute;
@@ -59,9 +59,8 @@ header {
       li {
         display: block;
         list-style: none;
-        padding: 1rem 0.7rem;
 
-        @media (max-width: 920px) {
+        @media (max-width: 1162px) {
           padding: 2rem 2rem;
         }
         a {
@@ -72,11 +71,15 @@ header {
           color: white;
           text-transform: uppercase;
           font-weight: 600;
+          margin: 0 2px;
         }
         a.link {
-          @media (max-width: 920px) {
-            padding: 2rem 1rem;
-          }
+          padding: 1rem 1rem;
+          border-radius: 10px;
+        }
+
+        a.link:hover {
+          background-color: $pink;
         }
         a.search {
           min-width: 44px;
@@ -94,7 +97,7 @@ header {
       }
 
       li.search-item {
-        @media (max-width: 920px) {
+        @media (max-width: 1162px) {
           display: none;
         }
       }
@@ -167,4 +170,8 @@ header {
       }
     }
   }
+}
+
+.responsiveToggle {
+  display: block;
 }

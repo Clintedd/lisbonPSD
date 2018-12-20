@@ -157,7 +157,7 @@ header {
   .top-nav .bar {
     font-size: 3rem;
     display: none; }
-    @media (max-width: 920px) {
+    @media (max-width: 1162px) {
       .top-nav .bar {
         display: block; } }
     .top-nav .bar .anchor-bar {
@@ -166,7 +166,7 @@ header {
     min-width: 150px; }
   .top-nav__nav {
     position: relative; }
-    @media (max-width: 920px) {
+    @media (max-width: 1162px) {
       .top-nav__nav {
         display: none;
         width: 100%; } }
@@ -181,7 +181,7 @@ header {
           -ms-flex-align: center;
               align-items: center;
       padding: 0; }
-      @media (max-width: 920px) {
+      @media (max-width: 1162px) {
         .top-nav__nav__ul {
           width: 100%;
           display: block;
@@ -190,9 +190,8 @@ header {
           border-radius: 0 0 5% 5%; } }
       .top-nav__nav__ul li {
         display: block;
-        list-style: none;
-        padding: 1rem 0.7rem; }
-        @media (max-width: 920px) {
+        list-style: none; }
+        @media (max-width: 1162px) {
           .top-nav__nav__ul li {
             padding: 2rem 2rem; } }
         .top-nav__nav__ul li a {
@@ -202,10 +201,13 @@ header {
           text-decoration: none;
           color: white;
           text-transform: uppercase;
-          font-weight: 600; }
-        @media (max-width: 920px) {
-          .top-nav__nav__ul li a.link {
-            padding: 2rem 1rem; } }
+          font-weight: 600;
+          margin: 0 2px; }
+        .top-nav__nav__ul li a.link {
+          padding: 1rem 1rem;
+          border-radius: 10px; }
+        .top-nav__nav__ul li a.link:hover {
+          background-color: #e85889; }
         .top-nav__nav__ul li a.search {
           min-width: 44px;
           min-height: 44px;
@@ -222,7 +224,7 @@ header {
                   align-items: center; }
           .top-nav__nav__ul li a.search .fa-search {
             font-size: 1.7rem; }
-      @media (max-width: 920px) {
+      @media (max-width: 1162px) {
         .top-nav__nav__ul li.search-item {
           display: none; } }
 
@@ -278,6 +280,9 @@ header {
       color: white;
       font-family: 'Raleway', sans-serif;
       font-size: 1.5rem; }
+
+.responsiveToggle {
+  display: block; }
 
 .date {
   background: #fafafa; }

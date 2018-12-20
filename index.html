@@ -16,11 +16,11 @@
 				<img src="images/logo.png" alt="">
 			</div>
 			<span class="bar">
-				<a href="" class="anchor-bar">
+				<a href="javascript:void(0);" class="anchor-bar" onclick="toggleNav()">
 					<i class="fas fa-bars"></i>
 				</a>
 			</span>
-			<nav class="top-nav__nav">
+			<nav class="top-nav__nav" id="topNav">
 				<ul class="top-nav__nav__ul">
 					<li>
 						<a href="" class="link">home</a>
@@ -614,6 +614,18 @@
 			<p>Copyright © <span>lisbon</span> 2017</p>
 		</div>
 	</footer>
+<script>
+	toggleNav = () => {
+		const nav = document.getElementById("topNav");
+		if (nav.className === "top-nav__nav") {
+			nav.className += " responsiveToggle";
+		}
+		else {
+			nav.className = "top-nav__nav";
+		}
+	}
+</script>
+
 	<!--Loading jQuery-->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="public/scripts/main.js"></script>
