@@ -11,6 +11,8 @@ header {
   justify-content: space-between;
   align-items: center;
   border-bottom: 2px solid rgba(255, 255, 255, 0.22);
+  flex-flow: row wrap;
+
 
   .bar {
     font-size: 3rem;
@@ -30,8 +32,11 @@ header {
   }
 
   &__nav {
+    position: relative;
+
     @media (max-width: 920px) {
-        display: none;
+        // display: none;
+        width: 90%;
       }
 
     &__ul {
@@ -39,9 +44,17 @@ header {
       justify-content: space-between;
       align-items: center;
       padding: 0;
+
+      @media (max-width: 920px) {
+        display: block;
+        position: absolute;
+      }
+      
+
+      
       
       li {
-        display: inline-block;
+        display: block;
         list-style: none;
         a {
           font-family: 'Poppins', sans-serif;
@@ -67,6 +80,12 @@ header {
           .fa-search {
             font-size: 1.7rem;
           }
+        }
+      }
+
+      li.search-item {
+        @media (max-width: 920px) {
+          display: none;
         }
       }
     }
